@@ -1,10 +1,9 @@
 package com.apress.spring.ch021;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
 
 public class SequenceGenerator {
 
-    @Autowired
     private PrefixGenerator prefixGenerator;
 
     private String suffix;
@@ -20,10 +19,12 @@ public class SequenceGenerator {
         this.initial = initial;
     }
 
+    @Required
     public void setPrefixGenerator(PrefixGenerator prefixGenerator) {
         this.prefixGenerator = prefixGenerator;
     }
 
+    @Required
     public void setSuffix(String suffix) {
         this.suffix = suffix;
     }

@@ -35,17 +35,18 @@ public class Main {
     /* 애플리케이션 종료되면 할인률 출력하도록 */
     public static void main(String[] args) throws Exception {
 
-        // TODO : 출력하고 싶어요 도움! 도움!
-//        Resource discountResource =
-//                new ClassPathResource("discounts.properties");
-//        Properties discountProps = PropertiesLoaderUtils.loadProperties(discountResource);
+        // 클래스 패스 기준으로 가져오기
+        Resource discountResource =
+                new ClassPathResource("/ch2/r6/resources/discounts.properties");
+        Properties discountProps = PropertiesLoaderUtils.loadProperties(discountResource);
 
+        // 외부에 있는 경우 보통 사용하며, 절대 경로 지정으로 가져오기
         Resource bannerResource = new FileSystemResource(String.format("%s/banner.txt", resourcePath));
         Properties bannerProps = PropertiesLoaderUtils.loadProperties(bannerResource);
 
 
-//        System.out.println("And don't forget our discounts!");
-//        System.out.println(discountProps);
+        System.out.println("And don't forget our discounts!");
+        System.out.println(discountProps);
         System.out.println("And don't forget our banners! :)");
         System.out.println(bannerProps);
     }

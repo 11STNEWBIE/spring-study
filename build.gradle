@@ -1,0 +1,66 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = "ch2.r5.Main"
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url "http://repository.atricore.org/m2-release-repository"
+    }
+
+}
+
+jar {
+    baseName = "${rootProject.name}"
+    version =  "0.0.1-SNAPSHOT"
+    manifest {
+        attributes "Implementation-Title": "${rootProject.name}",
+                "Implementation-Version": version
+                //"Main-Class": "${mainClassName}"
+    }
+}
+
+
+ext {
+    springVersion = '4.3.18.RELEASE'
+}
+
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/javax.inject/javax.inject
+    compile "javax.inject:javax.inject:1.0.0"
+    //group: 'javax.inject', name: 'javax.inject', version: '1.0.0'
+
+
+    // spring
+    compile "org.springframework:spring-webmvc:${springVersion}"
+    compile "org.springframework:spring-core:${springVersion}"
+    compile "org.springframework:spring-context:${springVersion}"
+    compile "org.springframework:spring-beans:${springVersion}"
+
+    // aspectj
+    compile 'org.aspectj:aspectjrt:1.7.4'
+    compile 'org.aspectj:aspectjtools:1.7.4'
+    compile 'org.aspectj:aspectjweaver:1.7.4'
+
+    compile 'org.slf4j:slf4j-simple:1.6.1'
+
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'

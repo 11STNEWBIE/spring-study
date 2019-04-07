@@ -20,6 +20,10 @@ repositories {
 }
 
 dependencies {
+    compile 'org.aspectj:aspectjrt:1.7.4'
+    compile 'org.aspectj:aspectjtools:1.7.4'
+    compile 'org.aspectj:aspectjweaver:1.7.4'
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

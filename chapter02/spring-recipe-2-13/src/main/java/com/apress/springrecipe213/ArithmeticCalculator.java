@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2019.
- * Made by jjwonyop
- */
-
 package com.apress.springrecipe213;
 
 public interface ArithmeticCalculator {

@@ -1,14 +1,10 @@
-/*
- * Copyright (c) 2019.
- * Made by jjwonyop
- */
-
 package com.apress.springrecipe213;
 
 
 import org.springframework.stereotype.Component;
 
 @Component("arithmeticCalculator")
+@LoggingRequired
 public class ArithmeticCalculatorImpl implements ArithmeticCalculator {
 
     @Override

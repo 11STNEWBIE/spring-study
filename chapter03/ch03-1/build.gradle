@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.springrecipes.ch03'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile 'org.projectlombok:lombok'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'javax.servlet:jstl'
+    compile("org.apache.tomcat.embed:tomcat-embed-jasper")
+}

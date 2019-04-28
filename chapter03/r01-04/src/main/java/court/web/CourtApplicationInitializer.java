@@ -1,8 +1,8 @@
-package main.java.court.web;
+package court.web;
 
-import main.java.court.config.InterceptorConfiguration;
-import main.java.court.service.config.ServiceConfiguration;
-import main.java.court.web.config.WebConfiguration;
+import court.config.InterceptorConfiguration;
+import court.service.config.ServiceConfiguration;
+import court.web.config.WebConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 

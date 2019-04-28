@@ -1,4 +1,4 @@
-package main.java.court.domain;
+package court.domain;
 
 public class Player {
 

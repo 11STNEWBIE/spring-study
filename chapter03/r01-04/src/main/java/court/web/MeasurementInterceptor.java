@@ -1,4 +1,4 @@
-package main.java.court.web;
+package court.web;
 
 
 import org.springframework.web.servlet.HandlerInterceptor;

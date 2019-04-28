@@ -1,4 +1,4 @@
-package main.java.court.config;
+package court.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 @Deprecated     // CourtApplicationInitializer 활용하면서, WebConfiguration 활용. 사실 기능은 같음.
 @Configuration
-@ComponentScan("main.java.court")
+@ComponentScan("court")
 public class CourtConfiguration {
 
     @Bean

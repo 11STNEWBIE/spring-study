@@ -1,7 +1,7 @@
-package main.java.court.config;
+package court.config;
 
-import main.java.court.web.ExtensionInterceptor;
-import main.java.court.web.MeasurementInterceptor;
+import court.web.ExtensionInterceptor;
+import court.web.MeasurementInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

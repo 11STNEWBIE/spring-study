@@ -1,4 +1,4 @@
-package main.java.court.web.config;
+package court.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("main.java.court")
+@ComponentScan("court")
 public class WebConfiguration {
 
     @Bean

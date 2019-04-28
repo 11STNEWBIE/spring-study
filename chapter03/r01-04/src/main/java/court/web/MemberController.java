@@ -1,7 +1,7 @@
-package main.java.court.web;
+package court.web;
 
-import main.java.court.domain.Member;
-import main.java.court.service.MemberService;
+import court.domain.Member;
+import court.service.MemberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;

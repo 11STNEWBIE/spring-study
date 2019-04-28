@@ -1,6 +1,6 @@
-package main.java.court.web;
+package court.web;
 
-import main.java.court.config.CourtConfiguration;
+import court.config.CourtConfiguration;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 

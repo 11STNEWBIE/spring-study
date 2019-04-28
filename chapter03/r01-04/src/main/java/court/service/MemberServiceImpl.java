@@ -1,6 +1,6 @@
-package main.java.court.service;
+package court.service;
 
-import main.java.court.domain.Member;
+import court.domain.Member;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

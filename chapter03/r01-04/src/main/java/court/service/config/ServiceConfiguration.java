@@ -1,9 +1,9 @@
-package main.java.court.service.config;
+package court.service.config;
 
-import main.java.court.service.MemberService;
-import main.java.court.service.MemberServiceImpl;
-import main.java.court.service.ReservationService;
-import main.java.court.service.ReservationServiceImpl;
+import court.service.MemberService;
+import court.service.MemberServiceImpl;
+import court.service.ReservationService;
+import court.service.ReservationServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,7 +1,7 @@
-package main.java.court.web;
+package court.web;
 
-import main.java.court.domain.Reservation;
-import main.java.court.service.ReservationService;
+import court.domain.Reservation;
+import court.service.ReservationService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

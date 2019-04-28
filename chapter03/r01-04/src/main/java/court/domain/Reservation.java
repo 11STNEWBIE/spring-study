@@ -1,4 +1,4 @@
-package main.java.court.domain;
+package court.domain;
 
 import java.time.LocalDate;
 import java.time.ZoneId;

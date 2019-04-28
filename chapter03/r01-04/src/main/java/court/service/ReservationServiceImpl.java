@@ -1,8 +1,8 @@
-package main.java.court.service;
+package court.service;
 
-import main.java.court.domain.Player;
-import main.java.court.domain.Reservation;
-import main.java.court.domain.SportType;
+import court.domain.Player;
+import court.domain.Reservation;
+import court.domain.SportType;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

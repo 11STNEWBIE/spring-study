@@ -1,6 +1,6 @@
-package main.java.court.service;
+package court.service;
 
-import main.java.court.domain.Member;
+import court.domain.Member;
 
 import java.util.List;
 import java.util.Optional;

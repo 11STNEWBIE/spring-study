@@ -1,7 +1,7 @@
-package main.java.court.service;
+package court.service;
 
 
-import main.java.court.domain.Reservation;
+import court.domain.Reservation;
 
 import java.util.List;
 

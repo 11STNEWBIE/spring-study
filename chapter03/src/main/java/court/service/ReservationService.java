@@ -1,6 +1,6 @@
-package service;
+package court.service;
 
-import domain.Reservation;
+import court.domain.Reservation;
 
 import java.util.List;
 

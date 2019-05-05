@@ -1,4 +1,4 @@
-package domain;
+package court.domain;
 
 public class SportType {
     private int id;

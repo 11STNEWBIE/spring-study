@@ -1,8 +1,9 @@
-package service;
+package court.service;
 
-import domain.Player;
-import domain.Reservation;
-import domain.SportType;
+import court.domain.Reservation;
+import court.domain.SportType;
+import court.domain.Player;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+@Service
 public class ReservationServiceImpl implements ReservationService {
     public static final SportType TENNIS = new SportType(1, "Tennis");
     public static final SportType SOCCER = new SportType(2, "Soccer");

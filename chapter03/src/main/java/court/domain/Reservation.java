@@ -1,7 +1,6 @@
-package domain;
+package court.domain;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Reservation {
     private String courtName;

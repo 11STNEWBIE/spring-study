@@ -1,12 +1,17 @@
-package domain;
+package court.domain;
 
-public class Player {
+public class Member {
+
     private String name;
     private String phone;
+    private String email;
 
-    public Player(String name, String phone){
-        this.name = name;
-        this.phone = phone;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getName() {

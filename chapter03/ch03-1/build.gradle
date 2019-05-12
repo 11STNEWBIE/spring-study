@@ -20,4 +20,6 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'javax.servlet:jstl'
     compile("org.apache.tomcat.embed:tomcat-embed-jasper")
+    compile 'org.apache.poi:poi:3.17'
+    compile 'com.lowagie:itext:4.2.2'
 }

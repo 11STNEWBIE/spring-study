@@ -81,6 +81,12 @@ public class ReservationServiceImpl implements ReservationService {
 
             fromDate = fromDate.plusDays(periodicReservation.getPeriod());
         }
+    }
 
+    @Override
+    public List<Reservation> findByDate(LocalDate date) {
+        return reservations.stream()
+                .filter(r -> Objects.equals(r.getDate(), date))
+                .collect(Collectors.toList());
     }
 }

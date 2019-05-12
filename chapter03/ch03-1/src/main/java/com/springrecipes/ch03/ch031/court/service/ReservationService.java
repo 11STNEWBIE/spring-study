@@ -10,6 +10,7 @@ import com.springrecipes.ch03.ch031.court.domain.Reservation;
 import com.springrecipes.ch03.ch031.court.domain.SportType;
 import com.springrecipes.ch03.ch031.exceptions.ReservationNotAvailableException;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface ReservationService {
@@ -22,4 +23,6 @@ public interface ReservationService {
     SportType getSportType(int sprotTypeId);
 
     void makePeriodic(PeriodicReservation periodicReservation) throws ReservationNotAvailableException;
+
+    List<Reservation> findByDate(LocalDate date);
 }

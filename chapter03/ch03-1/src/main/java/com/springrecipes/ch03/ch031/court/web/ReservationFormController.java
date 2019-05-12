@@ -15,11 +15,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -50,7 +49,7 @@ public class ReservationFormController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String submitForm(@ModelAttribute("reservation") @Validated Reservation reservation, BindingResult result, SessionStatus status) {
+    public String submitForm(@ModelAttribute("reservation") @Valid Reservation reservation, BindingResult result, SessionStatus status) {
         if(result.hasErrors()) {
             return "reservationForm";
         } else {
@@ -58,10 +57,5 @@ public class ReservationFormController {
             status.setComplete();
             return "redirect:reservationSuccess";
         }
-    }
-
-    @InitBinder
-    public void initBinder(WebDataBinder binder) {
-        binder.setValidator(reservationValidator);
     }
 }
